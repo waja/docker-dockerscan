@@ -1,3 +1,12 @@
+# Docker-Dockerscan
+
+[![Build Status](https://travis-ci.org/Cyconet/docker-dockerscan.svg?branch=development)](https://travis-ci.org/Cyconet/docker-dockerscan)
+[![Docker Build Status](https://img.shields.io/docker/build/waja/dockerscan.svg)](https://hub.docker.com/r/waja/dockerscan/)
+[![GitHub tag](https://img.shields.io/github/tag/Cyconet/docker-dockerscan.svg)](https://github.com/Cyconet/docker-dockerscan/tags)
+[![](https://img.shields.io/docker/pulls/waja/dockerscan.svg)](https://hub.docker.com/r/waja/dockerscan/)
+[![](https://img.shields.io/docker/stars/waja/dockerscan.svg)](https://hub.docker.com/r/waja/dockerscan/)
+[![](https://img.shields.io/docker/automated/waja/dockerscan.svg)](https://hub.docker.com/r/waja/dockerscan/)
+
 Builds a docker image with the [dockerscan](https://github.com/cr0hn/dockerscan) ready to run.
 
 Running
