@@ -9,4 +9,4 @@ install:
   - make build
 
 script:
-  - test "$(docker run --rm -it waja/dockerscan -h | head -1 | cut -d' ' -f2)" = "dockerscan"
+  - make test
