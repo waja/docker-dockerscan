@@ -5,7 +5,8 @@ MAINTAINER Jan Wagner "waja@cyconet.org"
 
 ENV DOCKERSCAN_VERSION 1.0.0a3
 
-RUN apk --no-cache add python3 && \
+RUN apk --no-cache update && apk --no-cache upgrade && \
+ apk --no-cache add python3 && \
  python3 -m ensurepip && \
  rm -r /usr/lib/python*/ensurepip && \
  pip3 install --upgrade pip setuptools && \
