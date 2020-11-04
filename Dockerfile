@@ -19,6 +19,7 @@ LABEL org.label-schema.name="dockerscan - security analysis & hacking tools" \
 
 ENV DOCKERSCAN_VERSION 1.0.0a3
 
+# hadolint ignore=DL3013,DL3017,DL3018
 RUN apk --no-cache update && apk --no-cache upgrade && \
  apk --no-cache add python3 && \
  python3 -m ensurepip && \
