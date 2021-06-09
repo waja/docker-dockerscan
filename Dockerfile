@@ -28,7 +28,7 @@ RUN apk --no-cache update && apk --no-cache upgrade && \
  pip3 install --no-cache-dir --upgrade pip setuptools && \
  if [ ! -e /usr/bin/pip ]; then ln -s pip3 /usr/bin/pip ; fi && \
  pip install --no-cache-dir dockerscan==$DOCKERSCAN_VERSION && \
- rm -r /root/.cache
+ rm -fr /root/.cache
 
 COPY entrypoint.sh /
 ENTRYPOINT ["/entrypoint.sh"]
