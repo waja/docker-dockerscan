@@ -25,9 +25,9 @@ RUN apk --no-cache update && apk --no-cache upgrade && \
  apk --no-cache add python3 && \
  python3 -m ensurepip && \
  rm -r /usr/lib/python*/ensurepip && \
- pip3 install --upgrade pip setuptools && \
+ pip3 install --no-cache-dir --upgrade pip setuptools && \
  if [ ! -e /usr/bin/pip ]; then ln -s pip3 /usr/bin/pip ; fi && \
- pip install dockerscan==$DOCKERSCAN_VERSION && \
+ pip install --no-cache-dir dockerscan==$DOCKERSCAN_VERSION && \
  rm -r /root/.cache
 
 COPY entrypoint.sh /
