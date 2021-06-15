@@ -16,18 +16,18 @@ Builds a docker image with the [dockerscan](https://github.com/cr0hn/dockerscan)
 
 - run the docker container with:
 
-```
+```bash
 docker run --rm --net=host waja/dockerscan -h
 ```
 
 # Building
 
-```
+```bash
 make build
 ```
 
 # Get a shell in a running container
 
-```
+```bash
 make shell
 ```
