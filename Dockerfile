@@ -7,7 +7,8 @@ ARG VCS_REF
 ARG VCS_BRANCH
 
 # See http://label-schema.org/rc1/ and https://microbadger.com/labels
-LABEL org.label-schema.name="dockerscan - security analysis & hacking tools" \
+LABEL maintainer="Jan Wagner <waja@cyconet.org>" \
+    org.label-schema.name="dockerscan - security analysis & hacking tools" \
     org.label-schema.description="Docker security analysis & hacking tools on Alpine Linux based container" \
     org.label-schema.vendor="Cyconet" \
     org.label-schema.schema-version="1.0" \
