@@ -103,6 +103,7 @@ jobs:
       - name: Test the Docker image
         run: |
           CONTAINER_OUTPUT="$(docker run --rm -t localhost:5000/foobar/${{ env.IMAGE_NAME }} -h)"
+          # shellcheck disable=SC2086
           TEST_STRING="$(echo ${CONTAINER_OUTPUT} | head -1 | cut -d' ' -f2)"
           if ! [ "${TEST_STRING}" = "dockerscan" ]; then exit 1; fi
       - name: Scan image with Container Scan
