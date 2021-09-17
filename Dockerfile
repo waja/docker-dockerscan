@@ -26,7 +26,7 @@ RUN apk --no-cache update && apk --no-cache upgrade && \
  apk --no-cache add python3 && \
  python3 -m ensurepip && \
  rm -r /usr/lib/python*/ensurepip && \
- pip3 install --no-cache-dir --upgrade pip setuptools==57.4.0 && \
+ pip3 install --no-cache-dir --upgrade pip setuptools==57.4.0 requests && \
  if [ ! -e /usr/bin/pip ]; then ln -s pip3 /usr/bin/pip ; fi && \
  pip install --no-cache-dir dockerscan==$DOCKERSCAN_VERSION && \
  rm -fr /root/.cache
