@@ -1,0 +1,9 @@
+# https://github.com/Azure/container-scan#ignoring-vulnerabilities
+general:
+  vulnerabilities:
+    - CVE-2018-18074
+  bestPracticeViolations:
+    - CIS-DI-0001
+    - DKL-DI-0006
+    - CIS-DI-0006
+    - CIS-DI-0003 
