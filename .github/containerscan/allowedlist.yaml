@@ -2,6 +2,7 @@
 general:
   vulnerabilities:
     - CVE-2018-18074
+    - CVE-2022-40897
   bestPracticeViolations:
     - CIS-DI-0001
     - DKL-DI-0006
